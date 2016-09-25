@@ -52,7 +52,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- banner --> 
 	
 	<div class="background">  
-				<div class="wrapper">
+				<div class="wrapper" id = "images">
 						<img src="images/robot1.jpeg" class="box" alt=""/>
 						<img src="images/robot2.jpeg" class="box" alt=""/>
 						<img src="images/robot3.jpg" class="box" alt=""/>
@@ -337,6 +337,13 @@ Institute of Biophysical Dynamics Research Fellowship</p>
   ga('create', 'UA-84025004-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script>
+$(document).ready(function () {
+            $("#images").click(function () {
+                alert("Image is clicked")
+            });
+        });
 </script>
 </body>
 </html>
